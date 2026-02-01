@@ -1,8 +1,8 @@
-import { Card } from '@/shared/ui/card';
-import { AnimatePresence, motion } from 'framer-motion';
-import { CheckCircle } from 'lucide-react';
 import type { FC } from 'react';
 import type { CinemaId } from '@/entities/cinema';
+import { AnimatePresence, motion } from 'framer-motion';
+import { CheckCircle } from 'lucide-react';
+import { Card } from '@/shared/ui/card';
 import { useRatingWidget } from '../model/use-rating-widget';
 import { RatingHeader } from './rating-header';
 import { RatingUserReview } from './rating-user-review';

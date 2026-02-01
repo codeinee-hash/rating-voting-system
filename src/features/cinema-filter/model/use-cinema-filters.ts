@@ -28,7 +28,9 @@ export const useCinemaFilters = (initialCinemas: Cinema[]) => {
 
   const toggleYear = (toggleYear: number) => {
     setSelectedYears((prev) =>
-      prev.includes(toggleYear) ? prev.filter((year) => year !== toggleYear) : [...prev, toggleYear]
+      prev.includes(toggleYear)
+        ? prev.filter((year) => year !== toggleYear)
+        : [...prev, toggleYear]
     );
   };
 

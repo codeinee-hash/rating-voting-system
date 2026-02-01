@@ -58,6 +58,7 @@ export const HomePage: FC = () => {
                 />
               );
             })}
+
             {filteredCinemas.length === 0 && (
               <div className="col-span-full py-12! text-center text-gray-400">
                 {t('common.noResults')}

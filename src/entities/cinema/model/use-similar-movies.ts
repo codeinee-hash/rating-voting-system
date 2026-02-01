@@ -2,7 +2,10 @@ import { useMemo } from 'react';
 import type { Cinema } from '../model/types';
 import { MOCK_CINEMAS } from '../model/consts';
 
-export const useSimilarMovies = (currentCinema?: Cinema, limit: number = 3): Cinema[] => {
+export const useSimilarMovies = (
+  currentCinema?: Cinema,
+  limit: number = 3
+): Cinema[] => {
   return useMemo<Cinema[]>(() => {
     if (!currentCinema) return [];
 
